@@ -23,16 +23,150 @@ body {
 
 .header {
   background-image: url(../assets/images/mobile/image-header.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
   padding: 32px 24px;
 }
+
+@media screen and (width>=1440px) {
+  .header {
+    background-image: url(../assets/images/desktop/image-header.jpg);
+  }
+}
+
 .icon-menu {
   width: 24px;
 }
 
-.menu{
+@media screen and (width>=1440px) {
+  .icon-menu {
+    display: none;
+  }
+}
+
+.logo-icon {
+  display: flex;
+  justify-content: space-between;
+  width: 327px;
+  margin-bottom: 88px;
+}
+
+.menu {
   display: none;
+  position: absolute;
   flex-direction: column;
+  align-items: center;
+  top: 106px;
+  gap: 2rem;
   width: 329px;
-  align-content: center;
-  background-color: #FFFCF8;
+  padding: 39px;
+  background-color: #fffcf8;
+}
+
+.menu::after {
+  position: absolute;
+  content: '';
+  top: -24px;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  background-color: #fffcf8;
+  background-image: linear-gradient(-45deg, #fffcf8 50%, #3dc0ff 50%);
+}
+
+@media screen and (width>=1440px) {
+  .logo-icon {
+    width: fit-content;
+    margin-bottom: 0;
+  }
+  .nav {
+    margin-left: auto;
+  }
+  .menu {
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    padding: 0;
+    width: auto;
+    gap: 2.9375rem;
+  }
+
+  .menu::after {
+    display: none;
+  }
+
+  .top-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 105px;
+  }
+}
+
+.show {
+  display: flex;
+}
+
+.menu__link {
+  font-size: 1.25rem;
+  line-height: 1.5625rem;
+  letter-spacing: -0.14px;
+  color: #808397;
+}
+
+.menu__link-yellow {
+  display: flex;
+  justify-content: center;
+  font-family: 'Fraunces', serif;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  width: 140px;
+  background-color: #fbd600;
+  padding: 16px;
+  border-radius: 28px;
+  color: #24303e;
+}
+
+@media screen and (width>=1440px) {
+  .menu__link {
+    color: white;
+  }
+  .menu__link-yellow {
+    background-color: white;
+    color: #24303e;
+  }
+  @media (hover: hover) {
+    .menu__link-yellow:hover {
+      background-color: #76ccf5;
+      color: white;
+    }
+  }
+}
+
+.title-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.25rem;
+}
+
+.sunnyside__title {
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: 'Fraunces', serif;
+  text-align: center;
+  letter-spacing: 6.25px;
+  color: white;
+}
+
+@media screen and (width>=1440px) {
+  .title-arrow {
+    gap: 6rem;
+  }
+  .sunnyside__title {
+    font-size: 56px;
+    letter-spacing: 8.75px;
+  }
 }

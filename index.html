@@ -15,26 +15,32 @@
   </head>
   <body>
     <header class="header">
-      <img class="logo" src="./assets/images/logo.svg" alt="logo" />
-      <img class="icon-menu" src="./assets/images/icon-hamburger.svg" alt="menu" />
-      <nav>
-        <ul id="menu" class="menu">
-          <li class="menu__item">
-            <a href="#" class="menu__link">About</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Services</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Projects</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link menu__link-yellow">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <h1 class="sunnyside__title">We are creatives</h1>
-      <img class="arrow" src="./assets/images/icon-arrow-down.svg" alt="arrow" />
+      <div class="top-bar">
+        <div class="logo-icon">
+          <img class="logo" src="./assets/images/logo.svg" alt="logo" />
+          <img id="button-menu" class="icon-menu" src="./assets/images/icon-hamburger.svg" alt="menu" />
+        </div>
+        <nav class="nav">
+          <ul id="menu" class="menu">
+            <li class="menu__item">
+              <a href="#" class="menu__link">About</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Services</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Projects</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link-yellow">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="title-arrow">
+        <h1 class="sunnyside__title">WE ARE CREATIVES</h1>
+        <img class="arrow" src="./assets/images/icon-arrow-down.svg" alt="arrow" />
+      </div>
     </header>
     <main>
       <section>
@@ -43,5 +49,6 @@
         </picture>
       </section>
     </main>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
