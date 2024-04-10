@@ -275,6 +275,9 @@ body {
   text-align: center;
 }
 
+@media screen and (width) {
+}
+
 .card-fruit--cherry {
   background-image: url(../assets/images/mobile/image-graphic-design.jpg);
   background-repeat: no-repeat;
