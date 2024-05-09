@@ -10,7 +10,7 @@ Sunnyside agency landing page
 
 ## Descripción 📑
 
-Es una marca de artes gráficas 
+Es un agencia creativa que ayuda a crecer marcas rapidamente, ofreciendo servicios de diseño gráfico y fotografía. En su página también ofrecen testimonios de sus clientes.  
 
 ## ¿Qué he aprendido en este proyecto? 🙇🏻
 
